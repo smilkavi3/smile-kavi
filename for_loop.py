@@ -158,12 +158,13 @@
 #       print("*",end=" ")
 #   print()
 # -----------------------------------------------------------------------------------------------
-  #  question no:13  
+  #  question no:12  
 # n=6
+# s=1
 # for i in range(1,n):
-#   for j in range(i,0,-1):
-#     print(i,end="")
-#     i+=1
+#   for j in range(1,i):
+#     print(s,end=" ")
+#     s+=1
 #   print()
 # -----------------------------------------------------------------------------------------------
   
@@ -210,17 +211,17 @@
 # -----------------------------------------------------------------------------------------------
   # question no:31
 # n=9
-# for i in range(1,n):
+# for i in range(1,n):  
 #   for j in range(n,i,-1):
 #     print("",end=" ")
 #   for k in range(1,i+1):
 #     print("*",end=" ")
 #   print()
-# n= 9 
+# n= 9
 # for i in range(1,n):
-#   for k in range(1,i+1):
+#   for k in range(1,i+2):
 #     print("",end=" ")
-#   for j in range(i,n,1):
+#   for j in range(i,n-1,1):
 #     print("*",end=" ")
 #   print()
 # -----------------------------------------------------------------------------------------------
@@ -323,4 +324,27 @@
 # for i  in n:
 #   s=s*2+int(i)
 # print(f"Decimal number of {n} is {s}")
+# -----------------------------------------------------------------------------------------------
+# question no:51
+# n=input("Enter number Octal to Decimal ")
+# s=0
+# for i in n:
+#   s=s*8+int(i)
+# print(f"Decimal of {n} is {s}")
+# -----------------------------------------------------------------------------------------------
+# question no:59
+# n=input("Enter number")
+# sum=0
+# l=len(n)
+# for i in n:
+#   sum+=int(i)**l
+# if(sum==int(n)):
+#   print("yes Amstrong",sum)
+# else:
+#   print("no Amstrong",sum)
+# -----------------------------------------------------------------------------------------------
+# question no:58
+# w="welcome"
+# l=len(w)
+# print("length of string welcome is",l)
 # -----------------------------------------------------------------------------------------------

@@ -55,3 +55,4 @@ if(a==500):
     print("500")
 else:
     print("0")
+
