@@ -78,4 +78,19 @@
 #     a+=4
 # print(s)
 # -----------------------------------------------------------------------------
+# question no:47
+# n=input("Enter number")
+# s=0
+# for i in n:
+#     i=int(i)
+#     f=1
+#     for j in range(1,i+1):
+#      f=f*j
+#     s=s+f  
+# if (int(n)==s):
+#     print("Strong number",n)
+# else:print("Not strong number",n)
+# -----------------------------------------------------------------------------
+# n=input("Enterr number")
 
+      

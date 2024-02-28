@@ -217,9 +217,8 @@
 #   for k in range(1,i+1):
 #     print("*",end=" ")
 #   print()
-# n= 9
 # for i in range(1,n):
-#   for k in range(1,i+2):
+#   for k in range(i+1,0,-1):
 #     print("",end=" ")
 #   for j in range(i,n-1,1):
 #     print("*",end=" ")
@@ -344,7 +343,7 @@
 #   print("no Amstrong",sum)
 # -----------------------------------------------------------------------------------------------
 # question no:58
-# w="welcome"
-# l=len(w)
-# print("length of string welcome is",l)
+w="welcome"
+l=len(w)
+print("length of string welcome is",l)
 # -----------------------------------------------------------------------------------------------
