@@ -91,6 +91,5 @@
 #     print("Strong number",n)
 # else:print("Not strong number",n)
 # -----------------------------------------------------------------------------
-# n=input("Enterr number")
+n=input("Enterr number")
 
-      

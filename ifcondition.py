@@ -46,13 +46,4 @@ elif(w==7):
 else:
     print("Invalid")
 
-a=int(input("Amount"))
-if(a>=2000):
-    print("2000")
-else:
-    print("0")
-if(a==500):
-    print("500")
-else:
-    print("0")
 
