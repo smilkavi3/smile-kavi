@@ -62,9 +62,12 @@
 #       print(a,end=" ")
 #       if i%5==0:
 #           print()
-# s=0
-# for i in range(1,5):
-#     for j in range(1,5):
-#         print(i,end=" ")
-#     s=s+i
+# 
+# string reversing program
+# n="welcome"
+# l=len(n)
+# for i in range(-1,-l,-1):      
+#     print(n[i],end=" ")
 
+
+  
