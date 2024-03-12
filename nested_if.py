@@ -7,6 +7,8 @@ if(a>b) and (a>c):
         print("c is greater")
 else:
     print("b is greater ")
+    
+    
 p=int(input("physics"))
 c=int(input("chemistry"))
 b=int(input("Biology"))
@@ -26,6 +28,7 @@ elif(per<=60):
     print("Grade E")
 elif(per<=40):
     print("Grade F")
+    
 s=float(input("Basic Salary"))
 if(s<=10000):
     s1=(s*.8)*.2

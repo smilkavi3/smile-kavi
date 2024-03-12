@@ -343,7 +343,7 @@
 #   print("no Amstrong",sum)
 # -----------------------------------------------------------------------------------------------
 # question no:58
-w="welcome"
-l=len(w)
-print("length of string welcome is",l)
+# w="welcome"
+# l=len(w)
+# print("length of string welcome is",l)
 # -----------------------------------------------------------------------------------------------

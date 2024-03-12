@@ -77,8 +77,6 @@
 #     print(n[i],end=" ")
 
 # separate the special,albhabet,number character:
-
-
 # s="**Docoding1234567890everyday##"
 # s1=""
 # s2=""
@@ -204,10 +202,10 @@
 #   else:print("not Binary 0")
   
 # Removing even index numbers: 
-s="ocean"
-l=len(s)
-for i in range(0,l,2):
-  print(s[i],end="")
+# s="ocean"
+# l=len(s)
+# for i in range(0,l,2):
+#   print(s[i],end="")
   
 # string contain same character:
 # s="ggg"
@@ -227,3 +225,43 @@ for i in range(0,l,2):
 #     break
 #   else:
 #     print("prime",n)
+
+# lower case to upper case:
+# s="kavi"
+# l=len(s)
+# for i in range(0,l):
+#   s1=s[i].upper()
+#   print(s1,end="")
+
+# upper case to lower case:
+# s="KAVI"
+# l=len(s)
+# for i in range(0,l):
+#   s1=s[i].lower()
+#   print(s1,end="")
+
+# print the number in given alphanumeric string:
+# s="AA1896d23cBb4"
+# l=len(s)
+# for i in range(0,l):
+#   if (s[i]>="0"and s[i]<="9"):
+#     print(s[i],end="")
+
+# converting upper to lower case:
+# s="ProGr ammiNg"
+# l=len(s)
+# s2=""
+# for i in range(0,l):
+#   if s[i]>="A"and s[i]<="Z":
+#     s2+=s[i].lower()
+#   elif s[i]>="a"and s[i]<="z":
+#     s2+=s[i].upper()
+# print(s2,end="")
+
+# frist letters to convert upper case:
+# s="welcome to codeing"
+# l=len(s)
+# print(s.title())
+
+s="prectice"
+l=len(s)
