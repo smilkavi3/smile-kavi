@@ -1,10 +1,10 @@
-# for i in range(1,11):
-#     print(i)
-
-# -----------------------------------------------------------------------------------------------
+# question no:1
+# print frist 10 natural number:
 # for i in range(1,11):
 #     print(i)
 # -----------------------------------------------------------------------------------------------
+# sum of frist 10 natural number:
+# question no:2
 # s=0
 # for i in range(1,11):
 #     s+=i

@@ -1,3 +1,4 @@
+# pyramid pattern with number increased by 1:
 # question no:13
 # n=5
 # s=1
@@ -9,6 +10,7 @@
 #         s=s+1
 #     print()
 # -----------------------------------------------------------------------------
+# Reoeat the number in the same row:
 # question no:17
 # n=5
 # for i in range(1,n):
@@ -91,5 +93,36 @@
 #     print("Strong number",n)
 # else:print("Not strong number",n)
 # -----------------------------------------------------------------------------
-n=input("Enterr number")
-
+# question no:54
+# n=input("Enter octal number  ")
+# s=0
+# for i in n:
+#     s=s*8+int(i)
+# b=bin(s)
+# print(f" octal to binary coversion:",b)
+# -----------------------------------------------------------------------------
+# question no:55
+# n=input("Enter deimal number: ")
+# s=0
+# for i in n:
+#     s=s*10+int(i)
+# h=hex(s)
+# print("Decimal to Hexa decimal conversion: ",h)
+# -----------------------------------------------------------------------------
+# question no:53
+# n=input("Enter binary number:")
+# s=0
+# for i in n:
+#     s=s*2+int(i)
+# o=oct(s)
+# print("Binary to octal conversion: ",o)
+# -----------------------------------------------------------------------------
+# find prime number:
+# n=int(input("Enterr number"))
+# if n>1:
+#  for i in range(2,n):
+#   if n%i==0:
+#     print("Not prime",n)
+#     break
+#   else:
+#     print("prime",n)

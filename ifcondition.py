@@ -1,15 +1,18 @@
+# check letter is albhaber or not:
 L=input("Enter letters_")
 if((L>="a"and L<="z") or (L>="A" and L<="Z")):
     print("alphabet")
 else:
     print("Not alphabet")
 
+#  number is by 5 and 11 devisible:
 n=int(input("Enter number_"))
 if((n%5==0) and (n%11==0)):
     print("Divisible")
 else:
     print("Not divisible")
 
+# find the number is positive,negative,zero:
 L=input("Enter letter")
 n=int(input("Enter number"))
 if(n>0):
@@ -19,6 +22,7 @@ elif(n == 0):
 else:
     print("Negative number")
 
+# greatest of three number:
 n1=float(input("Enter the number"))
 n2=int(input("Enter number"))
 n3=float(input("Enter number"))
@@ -28,6 +32,8 @@ elif(n2>n3):
     print("Scond number")
 else:
     print("thrid number")
+    
+# checking day :
 w=int(input("Enter week number"))
 if(w==1):
     print("Monday")

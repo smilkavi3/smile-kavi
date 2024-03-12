@@ -1,3 +1,5 @@
+
+# notes counting program:
 # amount=int(input("Enter amount"))
 # rs2000=0
 # rs500=0
@@ -45,7 +47,7 @@
                             
 
                     
-
+# calculate electricity bill:
 u=int(input("Enter units"))
 if(u<=50):
     amount=50*0.50
