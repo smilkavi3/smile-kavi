@@ -263,5 +263,13 @@
 # l=len(s)
 # print(s.title())
 
-s="prectice"
-l=len(s)
+# Removing vowel in given string:
+# s="Welcome to coding"
+# l=len(s)
+# for i in range(0,l):
+#   if(s[i] not in "aeiouAEIOU"):
+#     print(s[i],end="")
+    
+
+  
+  
