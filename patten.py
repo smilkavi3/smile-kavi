@@ -269,7 +269,5 @@
 # for i in range(0,l):
 #   if(s[i] not in "aeiouAEIOU"):
 #     print(s[i],end="")
-    
 
-  
   
