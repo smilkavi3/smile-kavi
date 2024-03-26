@@ -116,5 +116,32 @@
 # print("count of a:",ca)
 # print("count of b:",cb)
 
+# l=192
+# l1=[]
+# a=l*2
+# l1.append(a)
+# b=l*3
+# l1.append(b)
+# l1.append(l)
+# print(l1)
 
+# person=[
+#    {
+#    "Name":"gowtham",
+#    "age": 18,
+#    "state":"tamil nadu",  
+#    },
+#       {"Name":"asoon",
+#    "age": 17,
+#    "state":"tamil nadu",
+#    }
+#       ]
+# new=[]
+# for i in person:
+#    a=i["age"]
+#    print(a)
+#    if a<=18:
+#       j=0
+#       person[i]["age"]
+#       print(person)
    
