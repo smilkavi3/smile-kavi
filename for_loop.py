@@ -167,8 +167,8 @@
 #     s+=1
 #   print()
 # -----------------------------------------------------------------------------------------------
-  
 # question no:27
+# To find the perfect number:
 # n=int(input("Enter number"))
 # for i in range(1,n):
 #   result=0
@@ -180,6 +180,7 @@
 # -----------------------------------------------------------------------------------------------
   
 # questionno:23
+# To find the sum of series:
 # sum=0
 # x=2
 # n=5
@@ -192,8 +193,8 @@
 #   a+=2
 # print("sum of series=",sum)
 # -----------------------------------------------------------------------------------------------
-  
 # question no:24
+# To find the sum of series:
 # sum=0
 # x=2
 # n=5
@@ -225,7 +226,7 @@
 #   print()
 # -----------------------------------------------------------------------------------------------
 # question no:29
-
+# To find Amstrong number:
 # n=input("enter number")
 # l=len(n)
 # sum=0
@@ -284,6 +285,7 @@
 #   print(i,end="")
 # -----------------------------------------------------------------------------------------------
 # question no:41
+# to convert the decimal to binary:
 # n=int(input("Enter decimal number to Binary"))
 # print(bin(n))
 # -----------------------------------------------------------------------------------------------
@@ -303,14 +305,17 @@
 # print ("LCM of two number",LCM)  
 # -----------------------------------------------------------------------------------------------
 # question no:50
+# To convert decimal to octal :
 # n=int(input("Enter number Decimal to octal "))
 # print(oct(n))
 # -----------------------------------------------------------------------------------------------
 # question no:55
+# To convert decimal to hexadecimal:
 # n=int(input("Enter number Dceimal to Hexadecimal"))
 # print(hex(79))
 # -----------------------------------------------------------------------------------------------
 # question no:46
+# coversion of binary number to decimal:
 # n=input("Enter number Binary to Decimal")
 # s=0
 # for i in n:
@@ -318,6 +323,7 @@
 # print(f"Decimal of {n} is {s}")
 # -----------------------------------------------------------------------------------------------
 # question no:42
+# To convert binary to decimal number:
 # n=(input("Enter number Bibary to Decimal"))
 # s=0
 # for i  in n:
@@ -325,6 +331,7 @@
 # print(f"Decimal number of {n} is {s}")
 # -----------------------------------------------------------------------------------------------
 # question no:51
+# To convert octal to deecimal numbers:
 # n=input("Enter number Octal to Decimal ")
 # s=0
 # for i in n:
@@ -332,6 +339,7 @@
 # print(f"Decimal of {n} is {s}")
 # -----------------------------------------------------------------------------------------------
 # question no:59
+# To find Amstrong numberr:
 # n=input("Enter number")
 # sum=0
 # l=len(n)
@@ -343,6 +351,7 @@
 #   print("no Amstrong",sum)
 # -----------------------------------------------------------------------------------------------
 # question no:58
+# To revers the string:
 # w="welcome"
 # l=len(w)
 # print("length of string welcome is",l)

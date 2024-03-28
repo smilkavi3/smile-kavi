@@ -192,8 +192,8 @@
 # print()
 # print((sorted(f)))
 
-
-# check the string contain only  binary value of 1 and 0:1
+# question no:1
+# check the string contain only  binary value of 1 and 0:
 # n="101"
 # l=len(n)
 # for i in range(0,l):
@@ -201,13 +201,15 @@
 #     print("Binary 1")
 #   else:print("not Binary 0")
   
-# Removing even index numbers:2
+# question no:2
+# Removing even index numbers:
 # s="ocean"
 # l=len(s)
 # for i in range(0,l,2):
 #   print(s[i],end="")
   
-# string contain same character:3
+# question no:3
+# string contain same character:
 # s="ggg"
 # l=len(s)
 # for i in range(0,l):
@@ -216,7 +218,8 @@
 #   else:
 #     print("true")
 
-# prime number:4
+# question no:4
+# prime number:
 # n=int(input("Enterr number"))
 # if n>1:
 #  for i in range(2,n):
@@ -226,28 +229,32 @@
 #   else:
 #     print("prime",n)
 
-# lower case to upper case:5
+# question no:5
+# lower case to upper case:
 # s="kavi"
 # l=len(s)
 # for i in range(0,l):
 #   s1=s[i].upper()
 #   print(s1,end="")
 
-# upper case to lower case:6
+# question no:6
+# upper case to lower case:
 # s="KAVI"
 # l=len(s)
 # for i in range(0,l):
 #   s1=s[i].lower()
 #   print(s1,end="")
 
-# print the number in given alphanumeric string:7
+# question no:7
+# print the number in given alphanumeric string:
 # s="AA1896d23cBb4"
 # l=len(s)
 # for i in range(0,l):
 #   if (s[i]>="0"and s[i]<="9"):
 #     print(s[i],end="")
 
-# converting upper to lower case:8
+# question no:8
+# converting upper to lower case:
 # s="ProGr ammiNg"
 # l=len(s)
 # s2=""
@@ -258,12 +265,14 @@
 #     s2+=s[i].upper()
 # print(s2,end="")
 
-# frist letters to convert upper case:9
+# question no:9
+# frist letters to convert upper case:
 # s="welcome to codeing"
 # l=len(s)
 # print(s.title())
 
-# Removing vowel in given string:10
+# question no:10
+# Removing vowel in given string:
 # s="Welcome to coding"
 # l=len(s)
 # for i in range(0,l):
@@ -271,3 +280,12 @@
 #     print(s[i],end="")
 
   
+# s="kavi yarasan"
+# n={}
+# for i in s:
+#   if i  in n:
+#     s[i]=s[i]+1
+#   else:
+#     s[i]=1
+#   print(n)
+

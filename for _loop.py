@@ -1,5 +1,6 @@
-# pyramid pattern with number increased by 1:
+
 # question no:13
+# pyramid pattern with number increased by 1:
 # n=5
 # s=1
 # for i in range(1,n):
@@ -10,8 +11,8 @@
 #         s=s+1
 #     print()
 # -----------------------------------------------------------------------------
-# Reoeat the number in the same row:
 # question no:17
+# Reoeat the number in the same row:
 # n=5
 # for i in range(1,n):
 #     for j in range(n,i,-1):
@@ -24,6 +25,7 @@
 #        print((j+1)%2,end="")
 #     print()
 # -----------------------------------------------------------------------------
+# To find sum of even number:
 # a=1
 # n=6
 # sum=0
@@ -40,6 +42,7 @@
 
 # -----------------------------------------------------------------------------
 # question no:25
+# To find the Squar of natural number:
 # a=1
 # sum=0
 # for i in range(1,6):
@@ -48,6 +51,7 @@
 # print("square of Natural number=",sum)
 # -----------------------------------------------------------------------------
 # question no:15
+# To find Factorial of number:
 # n=int(input("Enter number to find factorial"))
 # s=1
 # for i in range(1,n+1):
@@ -81,6 +85,7 @@
 # print(s)
 # -----------------------------------------------------------------------------
 # question no:47
+# To find the Strong number:
 # n=input("Enter number")
 # s=0
 # for i in n:
@@ -94,6 +99,7 @@
 # else:print("Not strong number",n)
 # -----------------------------------------------------------------------------
 # question no:54
+# To convert octal to binary conversion:
 # n=input("Enter octal number  ")
 # s=0
 # for i in n:
@@ -102,6 +108,7 @@
 # print(f" octal to binary coversion:",b)
 # -----------------------------------------------------------------------------
 # question no:55
+# To convert the decimal to hexa decimal number:
 # n=input("Enter deimal number: ")
 # s=0
 # for i in n:
@@ -110,6 +117,7 @@
 # print("Decimal to Hexa decimal conversion: ",h)
 # -----------------------------------------------------------------------------
 # question no:53
+# To convert the binary to octal number:
 # n=input("Enter binary number:")
 # s=0
 # for i in n:

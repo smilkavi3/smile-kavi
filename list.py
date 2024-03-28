@@ -125,6 +125,9 @@
 # l1.append(l)
 # print(l1)
 
+
+# topic is DICTONARY: 
+# finding vote eligible in given dictonary:
 # person=[
 #    {
 #    "Name":"gowtham",
@@ -132,16 +135,23 @@
 #    "state":"tamil nadu",  
 #    },
 #       {"Name":"asoon",
-#    "age": 17,
+#    "age": 15,
 #    "state":"tamil nadu",
 #    }
 #       ]
-# new=[]
 # for i in person:
 #    a=i["age"]
-#    print(a)
-#    if a<=18:
-#       j=0
-#       person[i]["age"]
-#       print(person)
-   
+#    if i["age"]>=18:
+#       print(" Eligible",a)
+#    else:
+#       print(" Not Eligible",a)
+# To remove the given string and add the given dictonary:
+t="geekforgeeks best for geeks"
+r={"geeks":"all cs aspirants"}
+a=t.split()
+a.pop()
+list=[]
+list=a
+list.append(r["geeks"])
+for i in list:
+   print(i,end=" ")
