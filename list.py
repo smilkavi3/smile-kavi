@@ -145,13 +145,51 @@
 #       print(" Eligible",a)
 #    else:
 #       print(" Not Eligible",a)
+
+
 # To remove the given string and add the given dictonary:
-t="geekforgeeks best for geeks"
-r={"geeks":"all cs aspirants"}
-a=t.split()
-a.pop()
-list=[]
-list=a
-list.append(r["geeks"])
-for i in list:
-   print(i,end=" ")
+# t="geekforgeeks best for "
+# r={"geeks":"all cs aspirants"}
+# a=t.split()
+# a.pop()
+# list=[]
+# list=a
+# list.append(r["geeks"])
+# for i in list:
+#    print(i,end=" ")
+
+# search element in given list:
+# l=[1,2,3,4]
+# n=(input("enter number to search"))
+# for i in l:
+#    if i==int(n):
+#       a=i,l.index(i)
+# print(a)
+
+# Reverse list in groups:
+# l=[5,6,8,9]
+# l1=[]
+# c=str(len(l))
+# n=input("Enter number")
+# for i in l:
+#    if l.index(i)<=int(n):
+#       l1.append(i)
+#       l1.sort(reverse=True)
+#    else:
+#       l1.append(i)
+# print(l1)
+
+# find the missing number in given list:
+# l=[1,2,9,10,20]
+# a=[]
+# for i in range(l[0],l[-1]+1):
+#   if i not in l:
+#     a.append(i)
+# print(a)
+
+l1={11, 7, 1, 13, 21, 3, 7, 3}
+l2={11, 3, 7, 1, 7}
+if l2.issubset (l1):
+    print("l2 is Sub set of l1")
+else:
+    print(" l2 is Not sub set of l1")

@@ -279,13 +279,14 @@
 #   if(s[i] not in "aeiouAEIOU"):
 #     print(s[i],end="")
 
-  
-# s="kavi yarasan"
+# counting the letter in given letter and output in form of dictonary 
+# s="banana"
 # n={}
 # for i in s:
 #   if i  in n:
-#     s[i]=s[i]+1
+#     n[i]=n[i]+1
 #   else:
-#     s[i]=1
-#   print(n)
+#     n[i]=1
+# print(n)
+
 
