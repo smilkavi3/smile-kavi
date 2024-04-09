@@ -187,9 +187,9 @@
 #     a.append(i)
 # print(a)
 
-l1={11, 7, 1, 13, 21, 3, 7, 3}
-l2={11, 3, 7, 1, 7}
-if l2.issubset (l1):
-    print("l2 is Sub set of l1")
-else:
-    print(" l2 is Not sub set of l1")
+# l1={11, 7, 1, 13, 21, 3, 7, 3}
+# l2={11, 3, 7, 1, 7}
+# if l2.issubset (l1):
+#     print("l2 is Sub set of l1")
+# else:
+#     print(" l2 is Not sub set of l1")

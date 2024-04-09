@@ -108,12 +108,28 @@
 # print(d3)
 
 #Rotate the list:
-l=[-1,-2,-3,4,5,6,7]
-for i in range(0,3):
-    a=l[len(l)-1]
-    # print(a)
-    for j in range(len(l)-1,0,-1):
-      l[j]=l[j-1]
-    l[0]=a
-print(l)
-    
+# l=[-1,-2,-3,4,5,6,7]
+# l=[1,2,3,4,5,6]
+# for i in range(0,4):
+#     a=l[len(l)-1]
+#     # print(a)
+#     for j in range(len(l)-1,0,-1):
+#       l[j]=l[j-1]
+#     l[0]=a
+# print(l)
+# l="({[]})"
+# l1=len(l)
+# count=1
+# for i in range(0,l1):
+#   a=l[i]
+#   # print(a)
+#   for j in range(-1,-l1-1,-1):
+#     b=l[j]
+#   # print(b)
+# if a == b:
+#   print("True")
+#   # count+=1
+#   # print(count)
+# else: 
+#   print("false")
+
