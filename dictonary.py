@@ -1,3 +1,24 @@
+
+# topic is DICTONARY: 
+# finding vote eligible in given dictonary:
+# person=[
+#    {
+#    "Name":"gowtham",
+#    "age": 18,
+#    "state":"tamil nadu",  
+#    },
+#       {"Name":"asoon",
+#    "age": 15,
+#    "state":"tamil nadu",
+#    }
+#       ]
+# for i in person:
+#    a=i["age"]
+#    if i["age"]>=18:
+#       print(" Eligible",a)
+#    else:
+#       print(" Not Eligible",a)
+
 # question no:02
 # Write a python script to add a key to a dictonary:
 # sampledictionary={0:10,1:20}
@@ -95,6 +116,17 @@
 #         d1[i]=d2[i]
 # print(d1)
 
+# To remove the given string and add the given dictonary:
+# t="geekforgeeks best for "
+# r={"geeks":"all cs aspirants"}
+# a=t.split()
+# a.pop()
+# list=[]
+# list=a
+# list.append(r["geeks"])
+# for i in list:
+#    print(i,end=" ")
+
 # remove duplicate files:
 # dic={"a":100,"b":201,"c":300,"a":200,"d":250}
 # d2={}
@@ -109,27 +141,11 @@
 
 #Rotate the list:
 # l=[-1,-2,-3,4,5,6,7]
-# l=[1,2,3,4,5,6]
-# for i in range(0,4):
+# l=[1,3,4,2]
+# for i in range(0,2):
 #     a=l[len(l)-1]
 #     # print(a)
 #     for j in range(len(l)-1,0,-1):
 #       l[j]=l[j-1]
 #     l[0]=a
 # print(l)
-# l="({[]})"
-# l1=len(l)
-# count=1
-# for i in range(0,l1):
-#   a=l[i]
-#   # print(a)
-#   for j in range(-1,-l1-1,-1):
-#     b=l[j]
-#   # print(b)
-# if a == b:
-#   print("True")
-#   # count+=1
-#   # print(count)
-# else: 
-#   print("false")
-

@@ -125,39 +125,6 @@
 # l1.append(l)
 # print(l1)
 
-
-# topic is DICTONARY: 
-# finding vote eligible in given dictonary:
-# person=[
-#    {
-#    "Name":"gowtham",
-#    "age": 18,
-#    "state":"tamil nadu",  
-#    },
-#       {"Name":"asoon",
-#    "age": 15,
-#    "state":"tamil nadu",
-#    }
-#       ]
-# for i in person:
-#    a=i["age"]
-#    if i["age"]>=18:
-#       print(" Eligible",a)
-#    else:
-#       print(" Not Eligible",a)
-
-
-# To remove the given string and add the given dictonary:
-# t="geekforgeeks best for "
-# r={"geeks":"all cs aspirants"}
-# a=t.split()
-# a.pop()
-# list=[]
-# list=a
-# list.append(r["geeks"])
-# for i in list:
-#    print(i,end=" ")
-
 # search element in given list:
 # l=[1,2,3,4]
 # n=(input("enter number to search"))
@@ -193,3 +160,4 @@
 #     print("l2 is Sub set of l1")
 # else:
 #     print(" l2 is Not sub set of l1")
+
