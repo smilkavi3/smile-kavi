@@ -149,3 +149,34 @@
 #       l[j]=l[j-1]
 #     l[0]=a
 # print(l)
+
+# l=[1,3,4,2]
+# l1=len(l)
+# for i in range(l1):
+#     a=i,l[i]
+#     # print(a)
+#     b=(i+3)//l1
+#     l[b]=l[i]
+#     print(l)
+
+# paranthissis program:
+# l="[(])"
+# l1=[]
+# l2=[]
+# le=len(l)
+# count=0
+# for i in range(le):
+#     a=l[i]
+#     if a=="{"or a=="["or a=="(":
+#         # l1.append(a) 
+#         count+=1
+#     elif a=="}"or a=="]"or a==")":
+#         # l2.append(a)
+#         count-=1
+# # print(count)
+# if count==0:
+#     print("true",count)
+# else:
+#     print("false",count)
+
+  

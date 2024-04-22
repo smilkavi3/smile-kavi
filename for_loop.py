@@ -219,7 +219,7 @@
 #     print("*",end=" ")
 #   print()
 # for i in range(1,n):
-#   for k in range(i+1,0,-1):
+#   for k in range(i+1):
 #     print("",end=" ")
 #   for j in range(i,n-1,1):
 #     print("*",end=" ")
