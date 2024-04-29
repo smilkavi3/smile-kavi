@@ -385,11 +385,43 @@
 #       print(" ",end=" ")
 #   print()
 
+# alphabet B patten:
 # n=5
 # for i in range(n):
 #   for j in range(n):
-#     if   (i==0 and j<=3) or () :
+#     if   (i==0 and j<=3) or (i==4 and j<=3) or i==2 or j==0 or (i==1 and j==4) or (i==3 and j==4) :
 #       print("*", end=" ") 
 #     else:
 #       print(" ", end=" ")
 #   print()
+
+# different star patten:
+# n=7
+# for i in range(n):
+#   for j in range(n):
+#     if j==3 or i==3 or (i==0 and j>=3) or (j==0 and i<=3) or(i==6 and j<=3) or (j==6 and i>=3):
+#       print("*",end=" ")
+#     else:
+#       print(" ",end=" ")
+#   print()
+
+# A patten:
+# for i in range(5):
+#   for j in range(9):
+#     if (i==0 and j==4) or (i==1 and j==3) or (i==2 and 2<=j<=6) or (i==3 and j==1) or (i==4 and j==0) or (i==1 and j==5) or (i==3 and j==7) or (i==4 and j==8):
+#       print("*", end=" ")
+#     else:
+#       print(" ",end=" ")
+#   print()
+
+
+for i in range(7):
+  for j in range(9):
+    if (i==0 and 0<j<=2 )or(i==0 and 6<=j<=7)or(i==1 and j<=3)or(i==1 and 5<=j<=9)or(i=):
+      print("*",end=" ")
+    else:
+      print(" ",end=" ")
+  print()
+
+
+    
