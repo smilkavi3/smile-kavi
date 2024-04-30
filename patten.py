@@ -414,14 +414,49 @@
 #       print(" ",end=" ")
 #   print()
 
+# print star in heart patten:
 
-for i in range(7):
-  for j in range(9):
-    if (i==0 and 0<j<=2 )or(i==0 and 6<=j<=7)or(i==1 and j<=3)or(i==1 and 5<=j<=9)or(i=):
-      print("*",end=" ")
+# for i in range(7):
+#   for j in range(9):
+#     if (i==0 and 0<j<=2 )or(i==0 and 6<=j<=7)or(i==1 and j<=3)or(i==1 and 5<=j<=9)or(i==2 and j<=9) or (i==3 and 1<=j<=7)or(i==4 and 2<=j<=6)or(i==5 and 3<=j<6)or (i==6 and j==4):
+#       print("*",end=" ")
+#     else:
+#       print(" ",end=" ")
+#   print()
+
+# rocket patten:
+# n=7
+# for i in range(n):
+#   for j in range(n):
+#     print(" "*(n-i)+"* "*i)
+# print()
+
+# n=5
+# for i in range(n):
+#   print(" "*i+"* "*(n-i)+"  "*i+" *"*(n-i))
+
+
+datas=[7,13,8,4,3,6,7,-10,-7,-12,-3,-9,-1,-6]
+positive=[]
+negative=[]
+datas.sort()
+# print(datas)
+def compute_closest_to_zero(num):
+  for i in num:
+    if i<0:
+      negative.append(i)
     else:
-      print(" ",end=" ")
-  print()
-
-
-    
+      positive.append(i)
+      positive.sort(reverse=True)
+compute_closest_to_zero(datas)
+# print(positive)
+# print(negative)
+a=positive.pop()
+b=negative.pop()
+sub=a-(-b)
+if sub>0:
+  print("closed to zero",b)
+if sub==0:
+  print("closed to zero",a)
+if sub<0:
+  print("closed to zero",a)
