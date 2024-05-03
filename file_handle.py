@@ -42,3 +42,6 @@
 # addNewStudents("datas1.txt",newmembers)
 
 
+
+file=open("patten.py","r")
+print(file.readline())
