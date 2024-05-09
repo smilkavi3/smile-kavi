@@ -34,7 +34,7 @@
 #     print(f"Hai {name} {mess} welcome to codeing")
 # function_name("kavi")
 
-# variable length arguments(number of arguments):
+# orbitaery argument(variable length arguments(number of arguments)):
 # def sum(*num):
 #     totel=0
 #     for i in num:

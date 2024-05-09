@@ -26,20 +26,20 @@
 
 #To creat file using function and add new student name :
  
-# datas=["arvind","kavi","yuvasri"]
+datas=["arvind","kavi","yuvasri"]
 
-# def addNewStudents(filename,newdata):
-#   for student in newdata:
-#     datas.append(student)
-#   for newstudent in datas:
-#     file = open(filename,"w")
-#     file.write(f"{newstudent}\n")
-#     file.close()
-#     print("new student added susccessfully")
+def addNewStudents(filename,newdata):
+  for student in newdata:
+    datas.append(student)
+  for newstudent in datas:
+    file = open(filename,"a")
+    file.write(f"{newstudent}\n")
+    file.close()
+    print("new student added susccessfully")
 
 
-# newmembers = ["studetn1","sangeetha"]
-# addNewStudents("datas1.txt",newmembers)
+newmembers = ["studetn1","sangeetha"]
+addNewStudents("datas1.txt",newmembers)
 
 
 
