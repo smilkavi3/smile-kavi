@@ -436,27 +436,15 @@
 #   print(" "*i+"* "*(n-i)+"  "*i+" *"*(n-i))
 
 
-datas=[7,13,8,4,3,6,7,-10,-7,-12,-3,-9,-1,-6]
-positive=[]
-negative=[]
-datas.sort()
-# print(datas)
-def compute_closest_to_zero(num):
-  for i in num:
-    if i<0:
-      negative.append(i)
-    else:
-      positive.append(i)
-      positive.sort(reverse=True)
-compute_closest_to_zero(datas)
-# print(positive)
-# print(negative)
-a=positive.pop()
-b=negative.pop()
-sub=a-(-b)
-if sub>0:
-  print("closed to zero",b)
-if sub==0:
-  print("closed to zero",a)
-if sub<0:
-  print("closed to zero",a)
+# module:
+# import my_module
+# print(my_module.my_name("kavi"))
+
+# module have two function and i call one function
+# from my_module import person
+# print(person["age"])
+
+# rename the module
+
+# import my_module as o
+# print(o.my_name("asoon"))

@@ -1,0 +1,11 @@
+# module is consider of libray and it contain python definitions and statement.include variables ,function, and classes you can use in other python file ny impoting them
+
+def my_name(name):
+    print("welcome to codeing " +name)
+    
+person={
+    "name":"kavi",
+    "age":23,
+    "place":"pondicherry",
+    "deg":"B.tech"
+}

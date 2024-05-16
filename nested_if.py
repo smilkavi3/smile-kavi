@@ -39,3 +39,34 @@ if(s<=20000):
 if(s>20000):
     s1=(s*.95)*.3
     print("Gross salary",s1)
+
+# to check is triangle:
+
+a=int (input("enter number"))
+b=int(input("enter number"))
+c=int(input("enter number"))
+if (a+b+c)==180:
+    print("is triangle")
+else:
+    print("not triangle")    
+    
+# To check the triangle types: 
+a=int (input("enter number "))
+b=int(input("enter number"))
+c=int(input("enter number"))
+
+if (a==a and b==c and c==a):
+    print("Isosceles triangle") 
+elif(a==b and b==c or c==a):
+    print("Euilateral triangle")
+else:
+    print("scalene triangle")   
+
+# to check leap year:
+y=int(input("Enter the year"))
+if y % 4==0 or y % 100!=0 and y % 400==0:
+    print("Leap year")
+else:
+    print("Comon year")
+    
+
