@@ -41,5 +41,15 @@
 #         totel+=i
 #     return totel
 # print(sum(1,2,3,4))    
-    
-    
+
+
+# reverse the string using function:
+ 
+# l="1234abcd"
+# g=len(l)
+# def function(a):
+#     for i in range(a-1,-1,-1):
+#         a=l[i]
+#         print(a,end="")
+# function(g)
+
