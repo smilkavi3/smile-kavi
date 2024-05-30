@@ -62,29 +62,41 @@
 # Class1.m(obj)
 
 # type 2 litle complex
-class Vehicle:
-    def __init__(detail,brand):
-        detail.brand=brand
-    def name(detail):
-        print("vehicle name ",detail.brand)
+# class Vehicle:
+#     def __init__(detail,brand):
+#         detail.brand=brand
+#     def name(detail):
+#         print("vehicle name ",detail.brand)
+# class Car(Vehicle):
+#     def __init__(detail, brand,model):
+#         super().__init__(brand)
+#         detail.model=model
+#     def name(detail):
+#         print("model name ",detail.model)
         
-class Car(Vehicle):
-    def __init__(detail, brand,model):
-        super().__init__(brand)
-        detail.model=model
-    def name(detail):
-        print("model name ",detail.model)
-class Honda(Car):
-    def __init__(detail, brand, model,horse_power):
-        super().__init__(brand, model)
-        detail.horse_power=horse_power
-    def name(detail):
-        print("Horse power is ",detail.horse_power)
-    def fullname(detail):
-        print(f"vehicle name is {detail.brand} model name {detail.model} hores powerr is {detail.horse_power} hp")
-x=Honda("tesla","advance_AI",400)
-x.fullname()
-x.name()     
-        
-        
-        
+# class Honda(Car):
+#     def __init__(detail, brand, model,horse_power):
+#         super().__init__(brand, model)
+#         detail.horse_power=horse_power
+#     def name(detail):
+#         print("Horse power is ",detail.horse_power)
+#     def fullname(detail):
+#         print(f"vehicle name is {detail.brand} model name {detail.model} hores powerr is {detail.horse_power} hp")
+# x=Honda("tesla","advance_AI",400)
+# x.fullname()
+# x.name()     
+
+# hybrid inheritance:
+ 
+class shape:
+    def draw(self):
+        print("draw")
+class circle(shape):
+    def draw(self):
+        # self.mm=mm
+        print("drawc")
+class square():
+    def draw(self):
+        print("draws")
+c=square()
+shape.draw(c)
