@@ -54,3 +54,16 @@
 # print(c)
 
 
+
+# encapsulation:
+# Restriction on accessing variables and methods directly and can prevent the accidental modification of data
+# two type of variable private and public
+
+class Base():
+    def __init__(self,name1,name2):
+        self.name1=name1
+        self.__name2=name2
+    def name(self):
+        return self.__name2
+            
+        
