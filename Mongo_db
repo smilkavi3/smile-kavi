@@ -22,9 +22,25 @@ except Exception as e:
 db=client["college"]
 student=db["student"]
 
-detail={
-    "name":"asoon",
-    "age":23,
+# detail={
+#     "name":"asoon",
+#     "age":23,
+#     "deg":"B.tech",
+#     "address":{
+#         "no":6,
+#         "street":"3 rd cross, prasanthi nagar",
+#         "location":"pondicherry"
+#     },
+#     "course":"python full stack",
+# }
+
+# add a single document
+
+# student.insert_one(detail)
+datas=[
+    {
+    "name":"Ravi",
+    "age":28,
     "deg":"B.tech",
     "address":{
         "no":6,
@@ -32,9 +48,44 @@ detail={
         "location":"pondicherry"
     },
     "course":"python full stack",
+    "phone":1238760970
+},
+{
+  "name":"kavi",
+    "age":22,
+    "deg":"B.tech",
+    "address":{
+        "no":5,
+        "street":"3 rd cross, prasanthi nagar",
+        "location":"pondicherry"
+    },
+    "course":"python full stack developer",
+    "phone":8756420976 
+},
+{
+    "name":"gowtham",
+    "age":25,
+    "deg":"B.tech",
+    "address":{
+        "no":6,
+        "street":"muthirayerpalam",
+        "location":"pondicherry"
+    },
+    "course":"python full stack",
+    "phone":2310583684
 }
+]
 
-# add a single document
+# student.insert_many(datas)
 
-student.insert_one(detail)
+# find option:
+# o={"phone":1238760970}
+# a=student.find_one(o)
+# print(a)
+
+# delet option:
+# b={"phone":2310583684}
+# a=student.delete_one(b)
+# print(a)
+
 

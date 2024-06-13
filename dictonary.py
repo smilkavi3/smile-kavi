@@ -179,4 +179,25 @@
 # else:
 #     print("false",count)
 
-  
+# # counting the letter in given letter and output in form of dictonary 
+# s="banana"
+# n={}
+# for i in s:
+#   if i  in n:
+#     n[i]=n[i]+1
+#   else:
+#     n[i]=1
+# print(n)
+
+# remove the space and also count letters :
+s="captain america"
+n={}
+a=s.replace(" ","")
+for i in a:
+  if i  in n:
+    n[i]=n[i]+1
+  else:
+    n[i]=1
+print(n)
+for key,value in n.items():
+ print(f"{key}:{value}")

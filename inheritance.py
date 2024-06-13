@@ -29,7 +29,7 @@
 # multilevel inheritance:
 # class Add():
 #     def addition(self,a,b):
-#         print(f"addtion is {a} {b}:",a+b)
+#         print(f"addition is {a} {b}:",a+b)
 # class Sub(Add):
 #     def subraction(self,a,b):
 #         print(f"subraction is {a} {b}:",a-b)
@@ -40,6 +40,21 @@
 # o.addition(5,4)
 
 # Hierarchical in heritance:
+class Base():
+    def add(self,a,b):
+       return a+b
+    def sub(self,a,b):
+        print(f"sub of num{a} {b} is:",a-b)
+    def multiplay(a,b):
+        print(f"multiplay of num{a} {b} is:",a*b)   
+class derived1(Base):
+    pass
+class derived2(Base):
+    pass
+class derived3(Base):
+    pass
+p=derived1()
+d=p.add(2,8)
+print(d)
 
-class 
-        
+

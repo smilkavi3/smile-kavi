@@ -57,13 +57,38 @@
 
 # encapsulation:
 # Restriction on accessing variables and methods directly and can prevent the accidental modification of data
-# two type of variable private and public
+# two type of variable private and public and protected
 
+#private variable to  access to within the class 
+
+# class Base():
+#     def __init__(self):
+#         self.__name1="kavi"
+#     def name(self):
+#         print(self.__name1)
+# a=Base()
+# a.name()
+# print(a.__name1)        
+
+# public can access to outside of the class
+
+# class Base():
+#     def __init__(self):
+#         self.name1="kavi"
+#     def name(self):
+#         print(self.name1)
+# a=Base()
+# a.name()
+# print(a.name1)  
+
+# protected variable to access to sub class:
 class Base():
-    def __init__(self,name1,name2):
-        self.name1=name1
-        self.__name2=name2
+    def __init__(self):
+        self._name1="kavi"
     def name(self):
-        return self.__name2
-            
-        
+        print(self._name1)
+class sub(Base):
+    pass
+a=sub()
+a.name()
+print(a._name1) 
