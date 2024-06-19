@@ -38,7 +38,7 @@ student=db["student"]
 
 # student.insert_one(detail)
 datas=[
-    {
+{
     "name":"Ravi",
     "age":28,
     "deg":"B.tech",
@@ -73,19 +73,108 @@ datas=[
     },
     "course":"python full stack",
     "phone":2310583684
+},
+{
+    "name":"sivakumar",
+    "age":29,
+    "deg":"B.com",
+    "address":{
+        "no":4,
+        "street":"muthirayerpalam",
+        "location":"chennai"
+    },
+    "course":"java full stack",
+    "phone":9626859570   
+},
+{
+    "name":"siva",
+    "age":27,
+    "deg":"B.sc",
+    "address":{
+        "no":6,
+        "street":"muthirayerpalam",
+        "location":"oragadam"
+    },
+    "course":"python ",
+    "phone":9626859570  
+},
+{
+    "name":"siva",
+    "age":23,
+    "deg":"B.sc",
+    "address":{
+        "no":4,
+        "street":"muthirayerpalam",
+        "location":"oragadam"
+    },
+    "course":"python ",
+    "phone":9626858436  
+},
+{
+    "name":"jagan",
+    "age":27,
+    "deg":"B.tech",
+    "address":{
+        "no":6,
+        "location":"chennai"
+    },
+    "course":"python ",
+    "phone":5189483657  
+},
+{
+    "name":"murugan",
+    "age":20,
+    "deg":"B.sc",
+    "address":{
+        "no":1,
+        "street":"muthirayerpalam",
+        "location":"thandalam"
+    },
+    "course":"python backend developer",
+    "phone":9120859570  
+},
+{
+    "name":"asoon",
+    "age":23,
+    "deg":"B.tech",
+    "address":{
+        "no":6,
+        "street":"3 rd cross, prasanthi nagar",
+        "location":"vannur"
+    },
+    "course":"python full stack",
+    "phone":7528954565
 }
 ]
-
 # student.insert_many(datas)
 
 # find option:
-# o={"phone":1238760970}
+
+# o={"phone":9120859570}
+# a=student.find_one(o)
+# print(a)
+
+# find option:
+
+# o={"address.location":"oragadam"}
 # a=student.find_one(o)
 # print(a)
 
 # delet option:
-# b={"phone":2310583684}
+# b={"address.location":"chennai"}
 # a=student.delete_one(b)
 # print(a)
 
 
+# update one:
+
+# old={"address.location":"vannur"}
+# update={"$set":{"address.location":"mumbai"}}
+# a=student.update_one(old,update)
+# print(a)
+
+#update many:
+# old={"address.location":{"$regex":"^pondicherry"}}
+# update={"$set":{"address.location":"dehli"}}
+# a=student.update_many(old,update)
+# print(a)

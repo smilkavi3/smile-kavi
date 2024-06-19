@@ -2,7 +2,7 @@ import random
 from itertools import combinations, product
 
 def add_teams_bulk(teams):
-    if len(teams) + 6 > 6:
+    if len(teams)>= 6:
         print("Cannot add more teams. Only 6 teams are allowed in total.")
         return
     

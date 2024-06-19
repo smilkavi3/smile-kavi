@@ -90,16 +90,20 @@
 #    owner_player[owner]=player
 # print(owner_player)
 
-n=60
-deg=[0,30,0,-45,0]
-l=[]
-for i in deg:
-   if i==0 :
-      l.append(n)
-   elif i<0:
-      n-=i
-      l.append(n)
-   elif i>0:
-      n-=i
-      l.append(n)
-print(l)
+# n=60
+# deg=[0,30,0,-45,0]
+# l=[]
+# for i in deg:
+#    if i==0 :
+#       l.append(n)
+#    elif i<0:
+#       n-=i
+#       l.append(n)
+#    elif i>0:
+#       n-=i
+#       l.append(n)
+# print(l)
+
+# add student
+
+
