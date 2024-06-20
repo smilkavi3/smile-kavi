@@ -58,17 +58,53 @@ def view_student():
         name=students.get("name","")
         age=students.get("age","")
         std=students.get("std","")
+        
 def find_one_student():
-    pass
-
+    roll_num=input("enter the roll_num: ")
+    b=students.find_one({"roll_num":roll_num})
+    print(b)
 def find_many_student():
     pass   
 
 def update_student():
-    num=input("enter roll_num of student: ")
-    
+ while True:  
+  num=students.find_one(input("enter roll_num of student: "))
+  if num: 
+    print("1.Roll_num\n2.Name\n3.age\n4.std\n5.gender")
+    choice=input("enter your choice: ")
+    if choice==1:
+        roll_num=input("enter roll num: ")
+        students.updade({"roll_num":roll_num},{"$set":{"roll_num":roll_num}})
+        print("Roll_num update done")
+    elif choice==2:
+        name=input("enter student name: ")
+        students.updade({"roll_num":roll_num},{"$set":{"name":name}})
+        print("Name update done")
+    elif choice==3:
+        age=input("enter student age: ")
+        students.update({"roll_num":roll_num},{"$set":{"age":age}})
+        print("Age update done")
+    elif choice==4:
+        std=input("enter student std: ")
+        students.update({"roll_num":roll_num},{"$set":{"std":std}})
+        print("std update done")
+    elif choice==5:
+        gender=input("enter student gender: ")
+        students.update({"roll_num":roll_num},{"$set":{"gender":gender}})
+        print("gender update done")
+    else:
+        print("out of range")
+  else:
+    print("choice correct option")
+      
+    n=input("enter do you want continu yes or no: ")     
+    if n.lower()!="yes":
+      break
+         
 def delet_one_student():
-    pass
+    c=input("enter stdent roll num: ")
+    if c:
+    
 
 def delet_many_student():
     pass
