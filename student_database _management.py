@@ -102,9 +102,9 @@ def update_student():
       break
          
 def delet_one_student():
-    c=input("enter stdent roll num: ")
-    if c:
-    
+    n=input("enter student roll num: ")
+    if n:
+        a=students.delet_one(n)
 
 def delet_many_student():
     pass
