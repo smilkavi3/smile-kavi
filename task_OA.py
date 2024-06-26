@@ -104,6 +104,38 @@
 #       l.append(n)
 # print(l)
 
+# missing number count:qn:1
+# l=[0,10,5,8,7]
+# def missing_num(a):
+#     n=int(input("enter the maximum range: "))
+#     length=len(a)
+#     missing_count=(n+1)-length
+#     return missing_count
+# b=missing_num(l)
+# print(b)
 
+# Roman number:
+# roman_num={
+#     "V":5,
+#     "VI":6,
+#     "L":50,
+#     "C":100,
+#     "D":500,
+#     "M":1000,
+#     "X":10
+# }
+# n=input("Enter the num: ")
+# a=n.upper()
+# for i in a:
+#     c=roman_num[i]
+# print(f"roman_num {n}-{c}")
+
+# sum of two array in given value:
+array=[1,4,45,6,10,8]
+length=len(array)
+for i in range(length):
+    for j in range(i+1,length):
+        if array[i]+array[j]==16:
+            print(f"sum of array[{i}] + array[{j}]==16")
 
 

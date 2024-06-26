@@ -167,9 +167,9 @@ datas=[
 
 
 # update one:
-
-# old={"address.location":"vannur"}
-# update={"$set":{"address.location":"mumbai"}}
+# any thing find and give old and update:
+# old={"age":25}
+# update={"$set":{"name":"GOWTHAM"}}
 # a=student.update_one(old,update)
 # print(a)
 
@@ -177,4 +177,7 @@ datas=[
 # old={"address.location":{"$regex":"^pondicherry"}}
 # update={"$set":{"address.location":"dehli"}}
 # a=student.update_many(old,update)
+# print(a)
+
+# a=student.find_one("name",input("enter name:"))
 # print(a)

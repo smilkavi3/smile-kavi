@@ -14,100 +14,146 @@ except Exception as e:
     print(e)
     
 db=client["school"]
-students=["student"]    
+students=db["students"]    
 
 def add_one_student():
-    for i in range(1):
-        roll_num=input("Enter Roll num of student: ")
-        name=input("Enter name of student: ")
-        age= input("Enter student age: ")
-        std=input("Enter student class: ")
-        gender=input("Enter student gender: ")
-        detail={
-            "roll_num":roll_num,
-            "name":name,
-            "age":age,
-            "std":std,
-            "gender":gender,
-        }
-        students.insert_one(detail)
-        
+    while True:
+        roll_number = input("Enter student roll number: ")
+        name = input("Enter student name: ").upper()
+        age = int(input("Enter student age: "))
+        gender = input("Enter student gender: ").upper()
+        grade = input("Enter student grade: ").upper()
+        student = {"Roll_number": roll_number, "Name": name, "Age": age, "Gender" : gender, "Grade": grade}
+        students.insert_one(student)
+        print("Student added successfully.")
+        choose = input(" continue to add another  students? [yes/no] : ")
+        if choose.lower() != "yes":
+           break
+
 def add_may_student():
-    n=input("enter number of student to add: ")
-    details=[]
-    for i in range():
-        roll_num=input("Enter Roll num of student: ")
-        name=input("Enter name of student: ")
-        age= input("Enter student age: ")
-        std=input("Enter student class: ")
-        gender=input("Enter student gender: ")
-        detail={
-            "roll_num":roll_num,
-            "name":name,
-            "age":age,
-            "std":std,
-            "gender":gender,
+    num_students = int(input("Enter the number of students to add: "))
+    details = []
+    for i in range(num_students):
+        roll_number = input(f"Enter roll number for student {i+1}: ")
+        name = input(f"Enter name for student {i+1}: ").upper()
+        age = int(input(f"Enter age for student {i+1}: "))
+        gender = input(f"Enter gender for student {i+1}: ").upper()
+        grade = input(f"Enter grade for student {i+1}: ").upper()
+        detail = {
+            "Roll_number": roll_number,
+            "Name": name,
+            "Age": age,
+            "Gender": gender,
+            "Grade": grade,
+            
         }
         details.append(detail)
-        students.insert_many(details)
+        print("-"*20)
+
+    students.insert_many(details)
+    print("Students added Successfully.")
         
 def view_student():
     a=list(students.find())
-    for i in a:
-        roll_num=students.get("roll_num","")
-        name=students.get("name","")
-        age=students.get("age","")
-        std=students.get("std","")
-        
+    if a:
+     for student in a:
+        roll_number =student.get("Roll_number","")
+        name =student.get("Name","")
+        age=student.get("Age","")
+        grade=student.get("Grade","")
+        gender=student.get("Gender","")
+        print("| {:<10} | {:<15} | {:<5} | {:<10} | {:<10} ".format(a["Roll_number"],a["Name"],a["Age"],a["Grade"],a["Gender"]))
+    else:
+        print("not found")
+
+def statement(i):
+ print("| {:<10} | {:<15} | {:<5} | {:<10} | {:<10} ".format(
+        i["Roll_number"],
+        i["Name"],
+        i["Age"],
+        i["Gender"],
+        i["Grade"]))
 def find_one_student():
-    roll_num=input("enter the roll_num: ")
-    b=students.find_one({"roll_num":roll_num})
-    print(b)
+    roll_number=input("enter the roll_number: ")
+    b=students.find_one({"Roll_number":roll_number})
+    print("| {:<10} | {:<15} | {:<5} | {:<10} | {:<10} ".format(b["Roll_number"],b["Name"],b["Age"],b["Grade"],b["Gender"]))
+    
 def find_many_student():
-    pass   
+    grade=input("enter the grade: ")
+    b=students.find({"Grade":grade})
+    num_students = students.count_documents({})
+    if num_students > 0:
+        print(f"Students in grade {grade}:")
+        print("| {:<10} | {:<15} | {:<5} | {:<10} | {:<10}  ".format(
+            "Roll Number","Name","Age","Gender","Grade"
+        ))
+        print("-" * 110)
+        for i in b:
+            statement(i)
+    else:
+         print("Gread not found")   
+
 
 def update_student():
- while True:  
-  num=students.find_one(input("enter roll_num of student: "))
-  if num: 
-    print("1.Roll_num\n2.Name\n3.age\n4.std\n5.gender")
-    choice=input("enter your choice: ")
-    if choice==1:
-        roll_num=input("enter roll num: ")
-        students.updade({"roll_num":roll_num},{"$set":{"roll_num":roll_num}})
-        print("Roll_num update done")
-    elif choice==2:
-        name=input("enter student name: ")
-        students.updade({"roll_num":roll_num},{"$set":{"name":name}})
-        print("Name update done")
-    elif choice==3:
-        age=input("enter student age: ")
-        students.update({"roll_num":roll_num},{"$set":{"age":age}})
-        print("Age update done")
-    elif choice==4:
-        std=input("enter student std: ")
-        students.update({"roll_num":roll_num},{"$set":{"std":std}})
-        print("std update done")
-    elif choice==5:
-        gender=input("enter student gender: ")
-        students.update({"roll_num":roll_num},{"$set":{"gender":gender}})
-        print("gender update done")
-    else:
-        print("out of range")
-  else:
-    print("choice correct option")
-      
-    n=input("enter do you want continu yes or no: ")     
-    if n.lower()!="yes":
-      break
+    while True:
+        roll_number = input("Enter the roll number of student to update: ")
+        query = students.find_one({"Roll_number": roll_number})
+        if query:
+            print("1. Name\n2. Age\n3. Gender\n4. Grade\n5. Subjects")
+            query = int(input("Choose any number from above to update the details of the student: "))
+            if query == 1:
+                new_name = input("Enter new name: ")
+                students.update_one({"Roll_number": roll_number}, {"$set": {"Name": new_name}})
+                print("Name updated successfully.")
+            elif query == 2:
+                new_age = int(input("Enter new age: "))
+                students.update_one({"Roll_number": roll_number}, {"$set": {"Age": new_age}})
+                print("Age updated successfully.")
+            elif query == 3:
+                new_gender = input("Enter new gender: ")
+                students.update_one({"Roll_number": roll_number}, {"$set": {"Gender": new_gender}})
+                print("Gender updated successfully.")
+            elif query == 4:
+                new_grade = input("Enter new grade: ")
+                students.update_one({"Roll_number": roll_number}, {"$set": {"Grade": new_grade}})
+                print("Grade updated successfully.")
+            elif query == 5:
+                new_subjects = input("Enter new subjects (comma-separated): ").split(",")
+                students.update_one({"Roll_number": roll_number}, {"$set": {"Subjects": new_subjects}})
+                print("Subjects updated successfully.")
+            else:
+                print("Number out of range.")
+        else:
+            print("Roll number not found.")
+        
+        choice = input("Do you want to update another student? (yes/no): ")
+        if choice.lower() != 'yes':
+            break
+
+
          
 def delet_one_student():
-    c=input("enter student roll num: ")
-    if c:
-        
-
+  while True:  
+      a=input("enter student: ")
+      if a:
+          students.delete_one({"Name":a})
+          print("Delet the student successfully")
+      else:
+          print("student not found")
+          
+      option=input("continue to delet another student yes of no :")
+      if option!="yes":
+          break
+          
 def delet_many_student():
-    pass
+      c=input("enter student grade: ")
+      if c:
+          students.delete_many({"Grade":c})
+          print("Delet the student successfully")
+      else:
+          print("student not found")
+          
+      
 
 def main():
     while True:
@@ -144,6 +190,5 @@ def main():
         else:
             print("Invalid option and enter correct option")
             
-if __name__=="__main__":
-    main()         
-    
+if __name__ == "__main__" :
+    main()      

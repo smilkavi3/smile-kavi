@@ -161,4 +161,15 @@
 # else:
 #     print(" l2 is Not sub set of l1")
 
+# Reverse the  list:
+s="hello  python world"
+a=list(s.split())
+print(a)
+l=len(a)
+l1=[]
+for i in range(l-1,-1,-1):
+ c=a[i]
+ l1.append(c)
+print(" ".join(l1))
 
+ 
