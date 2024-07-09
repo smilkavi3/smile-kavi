@@ -6,29 +6,33 @@
         <h1>Student detail</h1>
         <img src="https://static.vecteezy.com/system/resources/previews/000/382/297/original/vector-kids-writing-with-big-pencil.jpg" alt="image" height="50%" width="25%">
         <form>
-            <lable for="fname">Full Name</lable>
+            <label for="fname">Full name</label>
             <input type="text" id="fname">
             <br><br>
             <label for="age">Age</label>
             <input type="number" id="age">
+            <br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password">
             <h2>Studies:</h2>
-            <input type="radio" id="school">
+            <input type="radio" name="studies"id="school">
             <label for="school">School</label>
-            <input type="radio" id="college">
+            <input type="radio" name="studies" id="college">
             <lable for="college">College</lable>
-            <input type="radio" id="work">
+            <input type="radio" name="studies" id="work">
             <lable for="work">Work</lable>
             <br></br>
             <h2>Gender</h2>
-            <input type="checkbox" id="male">
+            <input type="radio" name="gender" id="male">
             <label for="male">Male</label>
-            <input type="checkbox" id="female">
+            <input type="radio" name="gender" id="female">
             <label for="female">Female</label>
-            <input type="checkbox" id="other">
+            <input type="radio" name="gender" id="other">
             <label for="checkbox">Other</label>
             <br><br>
-            <textarea cols="20" rows="10"></textarea>
-
+            <textarea cols="20" rows="10" name="" id=""></textarea>
+            <br><br>
+            <button>Submit</button>
         </form>
     </body>
 </html>
