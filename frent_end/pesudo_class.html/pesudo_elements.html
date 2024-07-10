@@ -13,12 +13,27 @@
                 font-size: lage;
                 text-decoration:underline red dotted 5px ;
             } */
-             p::before{
+             /* p::before{
                 content: url(smiley.gif)
-             }
-             p::after{
+             } */
+             /* p::after{
                 content:url(https://shorturl.at/HGXwP)
-             }
+             } */
+              /* ::marker{
+                color: blue;
+                font-weight: 6px;
+              } */
+               
+
+               input[type=text]:enabled{
+                background-color: red;
+               }
+               .one:hover{
+                background-color:purple;
+               }
+               input[type=text]:disabled{
+                background-color: green;
+               }
 
         </style>
     </head>
@@ -26,6 +41,11 @@
         <h1>Lorem</h1>
         <p>morning class secction in css  style class in pesudo elements</p>
         <p>welcome to class</p>
-
+        <br>
+        <form>
+            fullname:<input type="text"  enabled="enabled" value="name" >
+            <label for="age">Age</label>
+            <input class="one" type="text" id="age" disabled="disabled">
+        </form>
     </body>
 </html>
