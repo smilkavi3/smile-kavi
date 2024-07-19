@@ -2,19 +2,27 @@ import random
 from itertools import combinations, product
 
 def add_teams_bulk(teams):
-    if len(teams)>= 6:
+    max_teams=6
+    current_teams_count=len(teams)
+    
+    if current_teams_count>= max_teams:
         print("Cannot add more teams. Only 6 teams are allowed in total.")
         return
     
-    for i in range(6):
-        owner = input(f"Enter the owner name for team {i+1}: ")
-        team = input(f"Enter the team name for team {i+1}: ")
-        if team in teams:
-            print(f"Team {team} already exists. Owner is {teams[team]['owner']}.")
-        else:
+    remaining=max_teams-current_teams_count
+    no_of_team_added=0
+    
+    while no_of_team_added<remaining:
+        owner = input(f"Enter the owner name for team {no_of_team_added +1}: ")
+        team = input(f"Enter the team name for team {no_of_team_added +1}: ")
+        if team not in teams:
             teams[team] = {'owner': owner, 'players': [], 'budget': 2000}
             print(f"Added team {team} with owner {owner} and a budget of 2000.")
+        else:
+            print(f"Team {team} already exists. Owner is {teams[team]['owner']}.")
+            no_of_team_added+=1
 
+    
 def view_teams(teams):
     if not teams:
         print("No teams available.")
@@ -126,5 +134,13 @@ def main():
             print("Invalid choice, please try again.")
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
+teams={}
+for i in range(2):
+    team=input("enter the team : ")
+    owenr=input("enter the owner: ")
+    teams[team]={
+        "owner":owenr,
+        }
+    print(teams[team]["owner"])
