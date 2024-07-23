@@ -1,0 +1,93 @@
+
+body{
+    background-color: rgb(226, 51, 51);
+}
+
+.shape{
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% 50%;
+    border-radius: 50%;
+}
+.head{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% 20%;
+    border-radius: 50%;
+}
+.eyes1{
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -200% 380%;
+}
+.eyes2{
+    background-color: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: 100% 380%;
+}
+.muflerbg{
+    background-color: rgb(226, 51, 51);
+    height: 25px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% 350%;
+}
+.mufler_clour{
+    background-color: #FFA63F;
+    height: 15px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% 616%;
+    border-radius: 50px 50px 50px 50px;
+   
+}
+.hat1{
+    background-color: black;
+    width: 70px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -70%;
+
+}
+.hat2{
+    background-color: white;
+    width: 70px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -120%;
+}
+.hat3{
+    background-color: black;
+    width: 90px;
+    height: 12px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% 120%;
+}

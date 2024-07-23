@@ -1,0 +1,81 @@
+.main_box{
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;   
+}
+.main_one{
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -110% -110%;   
+}
+.main_two{
+    background-color: palegreen;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: 10% -110%;   
+}
+.main_three{
+    background-color: palegreen;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -110% 10%;   
+}
+.main_four{
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: 10% 10%;   
+}
+.sub_one{
+    background-color: palegreen;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -160% -160%;   
+}
+.sub_two{
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: 60% -160%;   
+}
+.sub_three{
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -160% 60%;   
+}
+.sub_four{
+    background-color: palegreen;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: 60% 60%;   
+}

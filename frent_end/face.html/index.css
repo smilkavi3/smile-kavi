@@ -1,0 +1,20 @@
+.face1{
+    background-color:#FFDEB9;
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% 50%;
+    border-bottom-right-radius: 100%;
+}
+.face2{
+    background-color:#FFDEB9;
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -150% 50%;
+    border-bottom-left-radius: 100%;
+}
