@@ -1,0 +1,81 @@
+
+body{
+    background-color: #BAC7CE;
+}
+
+.eye_outer{
+    background-color:black ;
+    width: 200px;
+    height: 200px;
+    border-radius: 0% 50% 0% 50%;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    translate: -50% 50%;
+    transform: rotate(170deg);
+}
+.iner_ball{
+    background-color: #868A64;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    translate: -50% 90%;
+    box-shadow: #5A6042;
+}
+.iner2_ball{
+    background-color: #4E2B24;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    translate: -50% 220%;   
+}
+.eye1_outer{
+    background-color:black ;
+    width: 200px;
+    height: 200px;
+    border-radius: 50% 0% 50% 0%;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    translate: -50% 50%;
+    transform: rotate(190deg);
+}
+.inerL_ball{
+    background-color: #868A64;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    translate: -50% 90%;
+    box-shadow: #5A6042;
+}
+.inerL1_ball{
+    background-color: #4E2B24;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid black;
+    position: absolute;
+    left: 80%;
+    top: 50%;
+    translate: -50% 220%;   
+}
+.head{
+    background-color:#475862 ;
+    width: 400px;
+    height: 400px;
+    clip-path: polygon(0% 50%, 100% 50%,50% 100%,0% 50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -135%;
+}

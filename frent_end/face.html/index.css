@@ -1,20 +1,70 @@
-.face1{
-    background-color:#FFDEB9;
-    height: 150px;
-    width: 100px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% 50%;
-    border-bottom-right-radius: 100%;
+
+body{
+    background-color: #F3AC3C;
 }
-.face2{
-    background-color:#FFDEB9;
-    height: 150px;
-    width: 100px;
+
+.face{
+    background-color:#998235 ;
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
     position: absolute;
     left: 50%;
     top: 50%;
-    translate: -150% 50%;
-    border-bottom-left-radius: 100%;
+    z-index: 1;
+}
+.ears1{
+    background-color: #998235;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -40% -10%;
+}
+.ears2{
+    background-color: #998235;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: 135% -10%;
+}
+.ears1_col{
+    background-color:#1A4341;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -40% 5%;
+}
+.ears2_col{
+    background-color:#1A4341;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: 215% 5%;
+}
+.mouth_background{
+    background-color: white;
+    width: 200px;
+    height: 80px;
+    /* position: absolute; */
+    left: 50%;
+    top: 50%;
+    translate: 16% 180%;
+    clip-path: circle(50% at -23.4px 70%);
+    z-index: 2;
+
 }
