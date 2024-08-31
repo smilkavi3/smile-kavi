@@ -1,0 +1,23 @@
+.container{
+    @extend.center;
+    .box1{
+        @include box(600px,600px,$frist);
+        @extend.center;
+        position: relative;
+    }
+    .box2{
+        @include box(500px,500px,$second);
+        @extend.center;
+        position: absolute;
+    }
+    .box3{
+        @include box(400px,400px,$frist);
+        @extend.center;
+        position: absolute;
+    }
+    .box4{
+        @include box(300px,300px,$second);
+        @extend.center;
+        position: absolute;
+    }
+}

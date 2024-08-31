@@ -1,0 +1,133 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(skyblue 50%,white 50%);
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    overflow: hidden;
+    color: black;
+    transition: .5s ease-in-out;
+}
+.pic{
+    width: 300px;
+    height: 100%;
+    position: relative;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    width: 300px;
+    height: 100%;
+    position: relative;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+/* img:hover{
+    rotate: -35deg;
+} */
+.size{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    padding-left: 5px;
+}
+li{
+    border: 3px solid white;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.but{
+    width: 115px;
+    height: 45px;
+    border: none;
+    position: absolute;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.price{
+    margin-top: 35px;
+}
+h4{
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+li:hover{
+    background-color: white;
+    color: blue;
+    opacity: .8;
+}
+.card:hover{
+    width: 600px;
+}
+.container{
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.outer{
+    background: linear-gradient(45deg,red,black);
+    width: 120px;
+    height: 10px;
+    animation-name: ani;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+.but:active{
+    background-color: black;
+    color: white;
+}
+.container:hover .outer{
+    animation-play-state: running;
+}
+@keyframes ani{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}

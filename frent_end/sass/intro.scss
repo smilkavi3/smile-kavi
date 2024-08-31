@@ -1,0 +1,10 @@
+@import"./classes";
+@import"./variables";
+@import"./mixin";
+@import"./container";
+
+
+body{
+    @extend.center;
+    min-width: 700px;
+}
