@@ -1,4 +1,3 @@
-
 # notes counting program:
 amount=int(input("Enter amount"))
 rs2000=0
