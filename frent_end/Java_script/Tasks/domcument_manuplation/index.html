@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>colour_change task</title>
+    <style>
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+    
+        
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section onchange="center()">
+        <h1>Counter App:</h1>
+        <h2 class="value">0</h2>
+        <!-- add even listner -->
+        <!-- <button class="change" onclick="trigger()">change</button> -->
+        <button class="increment" onclick="count()">Increment</button>
+        <button class="Decrement" onclick="uncount()">Decrement</button>
+        <button class="reset" onclick="reset()">Reset</button>
+    </section>
+    <script src="count_app.js"></script>
+</body>
+
+</html>
