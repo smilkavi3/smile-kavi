@@ -1,7 +1,9 @@
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 body{
@@ -13,32 +15,76 @@ body{
     position: relative;
     height: 500px;
     width: 75px;
-    box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.5) ;
+    box-shadow: -20px 20px 50px rgba(0, 0, 0, 0.19) ;
     border-radius: 40px;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden;  */   /*use to clearificication*/
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+}
+.main ul{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
 }
 
-li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
+.main ul li{
+    position: relative;
+    height: 60px;
+    padding: 0px 8px;
+    margin: 10px;
+    transition:.5s ease-in-out;
     border-radius: 50px;
+    cursor: pointer;
 }
 .name{
     position: absolute;
-    left: 80px;
+    left: 60px; 
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    position: absolute;
+    height: 60px;
+    left: 0;
+    display: flex;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
 }
 
-li:hover{
-    background-color: black;
+.main ul li:hover{
+    background-color:var(--clr);
+    transform: translateX(-30px); 
+    /* color: white;
+    /* animation-name: move;
+    transition:.5s ease-in;
+    background-color: red;
+    animation-duration: .5s;
+    animation-direction: alternate-reverse; */
+    
+}
+
+.active{
+    background-color:var(--clr);
+    width: 160px;
     color: white;
-    width: 90;
-    transition: .5s ease;
 }
-li span{
-    padding: 15px;
+li:hover .icon{
+    color: white;
 }
+
+/* can i add the key frames */
+/* @keyframes move{
+    100%{
+        transform: translateX(-40px);
+        transition:.5s ease-in;
+    }
+} */
