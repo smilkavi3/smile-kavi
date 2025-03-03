@@ -6,22 +6,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task page</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}?v=2">
 </head>
 
 <body>
-
-    <input id="input" type="text" placeholder="write somthing">
+    <div class="main">
+        <div class="container">
+            <div class="two">
+                <input id="input" type="text" placeholder="Write Something">
+                <select id="input-status">
+                    <option value="pending">pending</option>
+                    <option value="complet">complet</option>
+                </select>
+            </div>
+            <button id="Taskbtn">Add_Task</button>
+        </div>
+    </div>
     <div>
-        
-        <button onclick="getpending()">pending</button>
-        <button onclick="getComplete()">complete</button>
+        <button onclick="getpending()">Pending</button>
+        <button onclick="getComplete()">Complete</button>
     </div>
-    <div id="block" class="container">
-
-    </div>
-    <div id="but"></div>
-    <script src="{% static 'back.js' %}"></script>
+    <div id="block"></div>
+    <script src="{% static 'back.js' %}?v=3"></script>
 </body>
 
 </html>
